@@ -1,0 +1,11 @@
+
+North America: Valid
+Europe: Invalid
+  Missing routes: ['10.10.0.0/16', '172.20.0.0/12']
+Asia: Invalid
+  Missing routes: ['192.0.0.0/8', '110.10.0.0/16', '172.30.0.0/12']
+North America: Valid
+Europe: Invalid
+  Missing routes: ['10.10.0.0/16', '172.20.0.0/12']
+Asia: Invalid
+  Missing routes: ['192.0.0.0/8', '110.10.0.0/16', '172.30.0.0/12']
