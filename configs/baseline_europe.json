@@ -1,4 +1,31 @@
 {
-    "routes": ["100.0.0.0/8", "10.10.0.0/16", "172.20.0.0/12"]
-}
-
+    "region": "Europe",
+    "bgp_configuration": {
+      "asn": 65002,
+      "router_id": "10.1.0.1",
+      "routes": [
+        {
+          "network": "10.10.0.0/8",
+          "next_hop": "10.10.0.2",
+          "local_pref": 100,
+          "as_path": "65002 65001",
+          "communities": ["NO_EXPORT", "SITE_A"]
+        },
+        {
+          "network": "172.20.0.0/12",
+          "next_hop": "10.10.0.3",
+          "local_pref": 200,
+          "as_path": "65002 65003",
+          "communities": ["NO_ADVERTISE", "SITE_B"]
+        },
+        {
+          "network": "192.168.100.0/16",
+          "next_hop": "10.10.0.4",
+          "local_pref": 150,
+          "as_path": "65002 65004",
+          "communities": ["SITE_C"]
+        }
+      ]
+    }
+  }
+  
